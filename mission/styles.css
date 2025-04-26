@@ -5,11 +5,12 @@
     border-style: groove;
     border-width: 2px;
     border-color: rgba(185, 184, 184, 0.712);
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 50px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 40px;
     padding-top: 50px;
     line-height: 1.5;
+    margin: auto;
 }
 
 h1{
@@ -22,18 +23,33 @@ h2{
     color: #006EB6;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-size: 15px;
     border-bottom-style: solid;
     border-bottom-color: rgba(215, 213, 213, 0.712);
+    border-width: 1px;
+    
+}
+
+main{
+    padding-top: 15px;
 }
 
 .list{
     line-height: 1.5;
-    padding-bottom: 10
+}
+
+.list li{
+    padding-bottom: 20px;
+}
+
+li:nth-child(0) {
+    padding-top: 40px;
 }
 
 .logo{
     width: 150px;
-    align-content: center;
+    display: block;
+    margin: 20px auto;
+    padding-top: 20px;
 }
