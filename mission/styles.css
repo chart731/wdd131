@@ -1,3 +1,8 @@
+.dark .mission-page {
+    background-color: #333;
+    color: white;
+}
+
 .mission-page {
     font-size: 20px;
     font-family:'Times New Roman', Times, serif;
@@ -12,6 +17,7 @@
     line-height: 1.5;
     margin: auto;
 }
+
 
 h1{
     text-align: center;
@@ -31,6 +37,10 @@ h2{
     
 }
 
+.dark h2{
+    color: #A0D4ED;
+}
+
 main{
     padding-top: 15px;
 }
@@ -48,6 +58,13 @@ li:nth-child(0) {
 }
 
 .logo{
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+    padding-top: 20px;
+}
+
+.dark .logo{
     width: 150px;
     display: block;
     margin: 20px auto;
