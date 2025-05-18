@@ -35,7 +35,7 @@ nav {
     line-height: 1.2em;
 }
 
-button {
+.menu-button {
     background-color: unset;
     border: 0;
     color: var(--text-light);
@@ -71,12 +71,35 @@ figure {
     padding-bottom: 30px;
 }
 
+.hide {
+	display: none;
+}
+
 footer {
     background-color: var(--primary-color);
     font-family: var(--secondary-font);
     color: var(--text-light);
     text-align: center;
     padding: 10px;
+}
+
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 10;
+}
+
+dialog img {
+    margin: 0 auto;
+    margin: 20vh auto;
+    width: 90%;
+    max-height: 100%;
+}
+
+.close-viewer {
+    position: absolute;
+    margin-top: 20vh;
 }
 
 @media screen and (min-width: 700px) {
