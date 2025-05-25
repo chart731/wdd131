@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Principle Layout</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    header {
+      background: #005fcc;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h2 {
+      margin-top: 0;
+      color: #005fcc;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .cta button {
+      background: #005fcc;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background: #0044a3;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Design Principles in Action</h1>
+    <p>See how core design rules shape an effective layout</p>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Welcome!</h2>
+      <p>This layout demonstrates balance, contrast, emphasis, repetition, proximity, alignment, and white space — all in a clean, modern format.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h2>Balance</h2>
+        <p>A visually even distribution of content to avoid clutter or awkward tension.</p>
+      </div>
+      <div class="feature">
+        <h2>Contrast</h2>
+        <p>Using light vs dark, large vs small, bold vs regular for visual impact.</p>
+      </div>
+      <div class="feature">
+        <h2>Hierarchy</h2>
+        <p>Clear text and section sizes help users scan and prioritize content.</p>
+      </div>
+      <div class="feature">
+        <h2>White Space</h2>
+        <p>Strategic spacing keeps content readable and the layout clean.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <button>Learn More</button>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Design Demo. All rights reserved.
+  </footer>
+
+</body>
+</html>
