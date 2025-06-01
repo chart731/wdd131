@@ -35,6 +35,8 @@ header h1 {
 
 nav {
     color: #AF1B3F;
+    border-top: 2px solid #EFC69B;
+    border-bottom: 2px solid #EFC69B;
 }
 
 .main-nav {
@@ -42,12 +44,10 @@ nav {
     grid-template-columns: 100px 100px 100px;
     justify-content: end;
     justify-items: end;
-    border-top: 2px solid #EFC69B;
-    border-bottom: 2px solid #EFC69B;
     list-style: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 50px;
+    padding: 0;
+    max-width: 1000px;
+    margin: 20px auto;
 }
 
 ul a {
@@ -59,11 +59,14 @@ ul a {
 .content {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    max-width: 1000px;
+    margin: 20px auto;
 }
 
 .book-info {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    padding-bottom: 20px;
 }
 
 .filter {
@@ -72,18 +75,43 @@ ul a {
     text-align: center;
 }
 
+.info {
+    border-right: 2px solid #EFC69B;
+}
+
 .info p {
     color: #473144;
     font-size: 1.2em;
     padding-left: 15px;
-
+    text-align: right;
+    padding-right: 20px;
 }
 
 .info p:nth-of-type(1) {
     font-size: 1.4em;
+    margin-top: 20px;
+    line-height: 31px;
 }
 
-.book-title {
+.book {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title {
     color: #AF1B3F;
     font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 31px;
+    text-align: left;
+}
+
+.book-pic {
+    display: block;
+    margin: auto;
+}
+
+.description {
+    font-size: 1em;
 }
