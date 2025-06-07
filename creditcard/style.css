@@ -1,0 +1,71 @@
+body {
+    margin: 20px;
+}
+
+#cardForm {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.front {
+    box-shadow: 3px 3px 0px gray;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    padding: 15px;
+}
+
+#cardNumber {
+    width: 150%;
+}
+
+label[for="cardHolder"] {
+    grid-row: 3;
+}
+
+label[for="expiration"] {
+    grid-row: 3;
+}
+
+.front, .back {
+    background-color: #ddd;
+    border-radius: 5px;
+    width: 375px;
+    height: 220px;
+}
+
+.back {
+   box-shadow: 3px 3px 0px gray; 
+   z-index: 1;
+   margin: 60px 30px 15px -250px;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   align-items: end;
+   justify-items: end;
+}
+
+label[for="cvv"] {
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.empty {
+    background-color: rgb(75, 75, 75);
+    grid-row: 1;
+    justify-self: stretch;
+    align-self: first baseline;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.card-image {
+    padding-left: 100px;
+}
+
+.sbutton {
+    grid-column: 2;
+    width: 25%;
+    margin-left: 40px;
+    padding: 5px;
+}
