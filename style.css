@@ -5,7 +5,15 @@ header {
     padding-bottom: 40px;
 }
 
-h1, h2, h3 {
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+
+
+p {
     text-align: center;
     font-size: 2.5em;
 }
@@ -28,3 +36,21 @@ font-size: 2em;
 line-height: 2.5em;
 }
 
+.main {
+    background-color: #dbbb5b;
+    border-radius: 5px;
+}
+
+.sub {
+    background-color: #ee9191;
+    border-radius: 3px;
+}
+
+.eg {
+    background-color: #74bcd6;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: white;
+}
