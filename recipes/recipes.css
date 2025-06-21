@@ -131,13 +131,13 @@ button {
 }
 
 .social img {
-    padding-top: 20px;
+padding-top: 20px;
    width: 50px;
 }
 
 a {
     font-size: 0.6em;
-    color: var(--primary-color);
+    color: #167cb6;
     text-decoration: none;
     width: 100%;
     text-align: center;
