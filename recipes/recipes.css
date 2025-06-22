@@ -58,8 +58,8 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    justify-items: center;
+    align-items: center;
     padding: 10px;
 }
 
@@ -131,8 +131,9 @@ button {
 }
 
 .social img {
-padding-top: 20px;
+    padding-top: 20px;
    width: 50px;
+   justify-content: center;
 }
 
 a {
@@ -163,10 +164,7 @@ a {
 
    footer {
     flex-direction: row-reverse;
-   }
-
-   .social img {
-
+    justify-items: space-between;
    }
 
    a {
@@ -176,30 +174,5 @@ a {
 }
 
 @media only screen and (max-width: 960px) {
-     .recipe {
-        flex-direction: row;
-        gap: 1em;
-    }
-
-    .tags {
-        flex-direction: row;
-    }
-
-    img {
-        width: 75%;
-    }
-
-    .description {
-        display: inline-flex; 
-    }
-
-   footer {
-    flex-direction: row-reverse;
-   }
-
-
-   a {
-    text-align: left;
-    align-self: flex-start;
-   }
+    
 }
