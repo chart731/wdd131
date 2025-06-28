@@ -13,7 +13,7 @@ function getRandomListEntry(list) {
 console.log(getRandomListEntry(recipes));
 
 function tagsTemplate(tags) {
-
+    const html = tags.map((tag) => `<div>${tag}</div>`)
     return
 }
 
