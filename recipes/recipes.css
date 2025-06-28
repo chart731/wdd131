@@ -36,6 +36,8 @@ body {
 .recipe {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+    margin: 2rem;
 }
 
 .tags > div {
@@ -89,7 +91,7 @@ footer {
     border: 1px solid black;
     border-radius: 0.5em;
     background-color: transparent;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 input::placeholder {
@@ -156,6 +158,10 @@ a {
 
     .description {
         display: inline-flex; 
+    }
+
+    img {
+        max-width: 50%;
     }
 
    footer {

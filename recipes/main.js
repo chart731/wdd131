@@ -34,7 +34,7 @@ function ratingTemplate(rating) {
 }
 
 function recipeTemplate(recipe) {
-    return `<section class="recipe">
+    return `<section class="main-recipe recipe">
                 <img class="image" src="${recipe.image}" alt="${recipe.name}">
                 <div class="info">
                 <div class="tags">
@@ -48,7 +48,7 @@ function recipeTemplate(recipe) {
 }
 
 function renderRecipes(recipeList) {
-    const recipesElement = document.querySelector(".main-recipe");
+    const recipesElement = document.querySelector(".main-box");
     const recipesHtml = recipeList.map((recipe) => recipeTemplate(recipe)).join("");
     recipesElement.innerHTML = recipesHtml;
 }
