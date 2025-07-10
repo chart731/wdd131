@@ -133,10 +133,20 @@ img {
   height: 100px;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 300px) {
   .main-info {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .logo {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 475px) {
+  .logo {
+    max-width: 30%;
   }
 }
 
@@ -148,5 +158,9 @@ img {
     background-color: var(--secondary-color);
     border-style: solid;
     border-width: 1px;
+  }
+
+  .logo {
+    max-width: 20%;
   }
 }
