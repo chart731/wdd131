@@ -1,7 +1,7 @@
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #D81159;
-  --secondary-color: #f790cc;
+  --secondary-color: #F4BFDB;
   --accent1-color: #81D2C7;
   --accent2-color: #7692FF;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -25,10 +25,9 @@ img {
     max-width: 100%;
 }
 
-.main-header {
+.main-header, .main-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     border-style: solid;
     border-width: 1px;
     background-color: var(--secondary-color);
@@ -37,15 +36,35 @@ img {
 }
 
   .logo {
+    margin: 20px;
     max-width: 20%;
-    padding: 20px;
     border-radius: 15%;
+    border-style: dashed;
+    border-color: var(--primary-color);
   }
 
-  .main-nav {
+  .main-nav, .footer-nav {
+    display: inline-flex;
+    margin: auto;
+    margin-right: 40px;
     font-size: 2em;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+  .main-nav a, .footer-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+
+  .main-nav a:hover, .footer-nav a:hover {
+    color: white;
+    background-color: var(--accent1-color);
+  }
+
+  .main-nav a:visited, .footer-nav a:visited {
+    color: var(--primary-color);
   }
 
   .main-title {
@@ -61,6 +80,8 @@ img {
     grid-template-columns: 2fr 2fr;
     gap: 5px;
     background-color: var(--secondary-color);
+    border-style: solid;
+    border-width: 1px;
   }
 
 .bio {
@@ -71,6 +92,9 @@ img {
     font-size: 1.5em;
     line-height: 2em;
     border-radius: 7%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 }
 
 .portrait {
@@ -78,14 +102,18 @@ img {
     width: 90%;
     margin: 20px;
     padding: 20px;
+    border-style: dashed;
+    border-width: 2px;
 }
 
 .octopus {
-    border-radius: 7%;
+    border-radius: 10%;
     width: 90%;
     margin: 20px;
     padding: 20px;
     align-self: center;
+    border-style: dashed;
+    border-width: 2px;
 }
 
 .sub-info {
@@ -95,6 +123,30 @@ img {
     padding: 20px;
     font-size: 1.5em;
     line-height: 2em;
-    border-radius: 10%;
+    border-radius: 7%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 }
 
+.whitespace {
+  height: 100px;
+}
+
+@media screen and (min-width: 350px) {
+  .main-info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .main-info {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 5px;
+    background-color: var(--secondary-color);
+    border-style: solid;
+    border-width: 1px;
+  }
+}
