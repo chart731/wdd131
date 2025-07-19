@@ -19,6 +19,9 @@
 
 body {
     max-width: 1200px;
+    margin: auto;
+    border-style: dashed;
+    border-width: 1px;
 }
 
 img {
